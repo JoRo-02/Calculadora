@@ -10,20 +10,53 @@
     align-items: center;
     justify-content: center;
     height: 100vh;
-    background-color: rgb(11, 136, 94);
+    background-image: linear-gradient( to bottom right, rgb(0, 255, 200), rgb(212, 0, 255));
 }
 
 .calculadora{
-    border: 1px solid black;
+    background: rgba(255, 255, 255, .1);
+    border: 1px solid  rgba(255, 255, 255, .5);
+    box-shadow: 0 25px 45px rgba(0,0,0, .2);
     border-radius: 30px;
     padding: 40px;
 }
 
-button{
+.numero{
     height: 50px;
     width: 50px;
     border-radius: 50%;
+    font-weight: bold;
     margin: 2px;
+    color: white;
+    border: none;
+    background-color: aqua;
+}
+
+.operador.funcion{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    font-weight: bold;
+    margin: 2px;
+    color: white;
+    border: none;
+    background-color: rgb(212, 0, 255);
+}
+
+
+.operador{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    font-weight: bold;
+    margin: 2px;
+    color: white;
+    border: none;
+    background-color: rgb(214, 77, 241);
+}
+
+.punto{
+    background-color: aqua;
 }
 
 .equal{
@@ -39,4 +72,13 @@ button{
     font-size: 30px;
     display: flex;
     justify-content: center;
+    background:transparent;
+    border:1px solid white;
+    padding: 20px 2px;
+    border-radius: 12px;
+    color:white;
+}
+
+button:hover{
+    opacity: 0.6;
 }
