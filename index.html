@@ -4,46 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
     <div class="container">
-
-        <div class="texto">
-            <input type="text">
+        <div class="calculadora">
+            <div class="texto">
+                <input type="text" id="displayText" class="display" value="0" >
+            </div>
+            
+            <div class="botones">
+                <button id="C" value="C" class="operador">C</button>
+                <button id="+/-" value="+/-" class="operador">+/-</button>
+                <button id="%" value="%" class="operador">%</button>
+                <button id="suma" value="+" class="operador">+</button>
+                <br>
+                <button id="9" value="7" class = 'numero'>7</button>
+                <button id="8" value="8" class = 'numero'>8</button>
+                <button id="7" value="9" class = 'numero'>9</button>
+                <button id="resta" value="-" class="operador">-</button>
+                <br>
+                <button id="6" value="4" class = 'numero'>4</button>
+                <button id="5" value="5" class = 'numero'>5</button>
+                <button id="4" value="6" class = 'numero'>6</button>
+                <button id="multi" value="x" class="operador">x</button>  
+                <br>
+                <button id="3" value="1" class = 'numero'>1</button>
+                <button id="2" value="2" class = 'numero'>2</button>
+                <button id="1" value="3" class = 'numero'>3</button>
+                <button id="/" value="/" class="operador">/</button>
+                <br>
+                <button id="0" value="0" class = 'numero'>0</button>
+                <button id="." value="." class="operador">.</button>
+                <button id="=" value="=" class="equal operador">=</button>  
+            </div>
         </div>
-        
-        <div class="numeros">
-        <button id="0">0</button>
-        <button id="1">1</button>
-        <button id="2">2</button>
-        <button id="3">3</button>
-        <button id="4">4</button>
-        <button id="5">5</button>
-        <button id="6">6</button>
-        <button id="7">7</button>
-        <button id="8">8</button>
-        <button id="9">9</button>
-        </div>
-
-        
-
-        <div class="operadores">
-            <button id="suma">+</button>
-            <button id="resta">-</button>
-            <button id="multi">x</button>
-            <button id="dividir">/</button>
-            <button id="resultado">=</button>
-        </div>
-        
-        <div class="funciones">
-            <button id="C">C</button>
-            <button id="CE">CE</button>
-            <button id="delete">⌫</button>
-        </div>
-
-    </div>
     
+
+    <script src="script.js"></script>
 </body>
 
 <footer>
