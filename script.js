@@ -30,6 +30,10 @@ function clear(){
   display.value = "0";
 }
 
+function negar(numeroSigno ){
+  return numeroSigno * -1;
+}
+
 btnNumeros.forEach((boton)=>{
   boton.addEventListener('click', ()=>{
     numeroDigitado += boton.value;
@@ -83,11 +87,15 @@ btnOp.forEach((operador)=>{
           let valor1 =parseInt(numeroAlmacenado);
           let valor2 = parseInt(numeroDigitado);
           display.value = (operacion(operadorValor,valor1,valor2))
+          numeroDigitado = parseInt(display.value)
         }
 
         if(operador.value == 'C'){
-          clear()
+          clear();
+          return;
         }
+
+       
       }
   
     )
